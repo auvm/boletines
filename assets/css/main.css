@@ -1,11 +1,15 @@
-p{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 90px;
+:root{
+    --color1: #302727;
+    --color2: #ba2d2d;
+    --color3: #f2511b;
+    --color4: #f2861b;
+    --color5: #c7c730;
+    --color6: #f3e5f5;
+    --color7: #ffc400;
 }
 
-td{
-    border: 1px solid;
+html{
+    font-family: 'Nunito', sans-serif;
 }
 
 .container{
@@ -14,5 +18,61 @@ td{
     background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
 }
 
+.content{
+    max-width: 1100px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    
+}
+
+a{
+    /* enlaces */
+    text-decoration: none;
+    color: var(--color2);
+    font-weight: 700;    
+}
+
+.title{
+    /* modifica titulos */
+    text-transform: uppercase;
+}
+
+.paragraph{
+    /* alto de la linea || espaciado entre lineas */
+    line-height: 1.5em;
+    text-align: center;
+    font-weight: 200;
+
+}
+
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, table th{
+    padding: 1em;
+}
+
+.table th{
+    background-color: whitesmoke;
+}
+.table tr:nth-child(odd){
+    background-color: var(--color6);
+}
+
+.fa-star{
+    color: var(--color7);
+}
