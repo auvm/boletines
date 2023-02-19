@@ -76,3 +76,11 @@ a{
 .fa-star{
     color: var(--color7);
 }
+
+
+.title-item{
+    
+    border-bottom-style: inset;
+    border-width: 5px;
+    border-color: var(--color1);
+}
