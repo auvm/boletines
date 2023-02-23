@@ -38,7 +38,7 @@ html{
     /* difVertical difHorizontal desenfoque color */
     box-shadow: 0 3px 6px black;
     position: relative;
-    
+    padding: 1.8em;
 }
 
 a{
@@ -48,16 +48,25 @@ a{
     font-weight: 700;    
 }
 
+a:hover{
+    opacity: 0.7;
+}
+a:active{
+    background-color: var(--color5);
+    border-radius: 5px;
+}
+
 .title{
     /* modifica titulos */
-    text-transform: uppercase;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 .paragraph{
     /* alto de la linea || espaciado entre lineas */
     line-height: 1.5em;
-    text-align: center;
-    font-weight: 200;
+    text-align: justify;
+    font-weight: 400;
 
 }
 
@@ -94,11 +103,24 @@ a{
     padding-bottom: 1em;
 }
 
+.main-image{
+    float: left;
+    height: 250px;
+    margin-right: 1em;
+}
+
+.address{
+    color: var(--color2);
+    font-weight: 700;
+}
+
 .table_position{
     padding: 12px;
+    margin-right: 12px;
     background-color: var(--color1);
     color: var(--color6);
-    border-radius: 10%;   
+    border-radius: 10%;  
+    
 }
 
 .actions{
