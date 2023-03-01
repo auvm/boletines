@@ -39,6 +39,8 @@ html{
     box-shadow: 0 3px 6px black;
     position: relative;
     padding: 1.8em;
+
+    overflow: scroll;
 }
 
 a{
