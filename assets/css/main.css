@@ -13,6 +13,10 @@ html{
     font-family: 'Nunito', sans-serif;
 }
 
+.main-image{
+    max-width: 100%;
+}
+
 .container{
     
     background: #4CA1AF;  /* fallback for old browsers */
@@ -40,7 +44,7 @@ html{
     position: relative;
     padding: 1em;
 
-    overflow: scroll;
+    overflow: auto;
 }
 
 a{
@@ -112,25 +116,24 @@ a:active{
     /* shorthand property */
     border-bottom: 5px solid var(--color1) ;
     padding-bottom: 1em;
-}
-
-.main-image{
-    float: left;
-    height: 250px;
-    margin-right: 1em;
+    /* interlineado - alto de linea */
+    line-height: 1.5;
 }
 
 .address{
+    padding: 1em 1em;
     color: var(--color2);
     font-weight: 700;
+
 }
 
 .table_position{
-    padding: 12px;
+    padding: 9px;
     margin-right: 12px;
     background-color: var(--color1);
     color: var(--color6);
     border-radius: 10%;  
+    
     
 }
 
@@ -156,9 +159,15 @@ a:active{
     
 }
 
-@media(min-width:900px){
+@media(min-width:600px){
     .content{
         padding: 1.8em;
+    }
+
+    .main-image{
+        float: left;
+        height: 250px;
+        margin-right: 1em;
     }
 
     .table td, .table th{
